@@ -1,0 +1,620 @@
+
+/* Balaji G */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	line-height: 1.5em; 
+	background-color: #fff;
+	background-position: top;
+	background-repeat: repeat-x;
+}
+
+#subpage { 
+	background-image: url(../images/header.jpg); 
+}
+
+ul.menuitemlist {
+	float:left;
+	width:100%;
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+
+
+a.menuitems {
+	float:left;
+	width:5em;
+	text-decoration:none;
+	color:white;
+	background-color:#CCCCCC;
+	padding:0.25em 0.2em;
+	border-right:6px solid white;
+}
+
+
+a:hover.menuitems { 
+	background-color:#8A59AE;
+	color : white;
+}
+
+#me {
+	background-color:#7840A1;
+}
+
+
+#outer_sub_wrapper { 
+	width: 100%; 
+}
+
+#sub_wrapper { 
+	width: 94%; 
+	padding: 0 10px; 
+	margin: 0 auto; 
+}
+
+#header {
+	width: 100%;
+	height: 50px;
+}
+
+
+#sub_intro_text {
+	clear: both;
+	height: 10px;
+	padding-left: 10px;
+	padding-right: 30px;
+	color: #000;
+	font-size: 24px;
+	line-height: 75px;
+	width: 480px;
+	font-weight: 400;
+}
+
+
+#search{
+	float : right;
+	margin-right : 15px;
+	margin-top : 12px;
+}
+
+
+.cleaner { 
+	clear: both 
+}
+
+
+#OuterContent { 
+	width: 100%;
+}
+
+#InnerContent { 
+	width: 94%; 
+	padding: 20px 10px 0px; 
+	margin: 0 auto; 
+}
+
+
+#main {
+	clear: both;
+	width: 94%;
+	padding: 30px 0;
+}
+
+
+#home_main {
+	clear: both;
+	width: 100%;
+	padding: 25px 0px 0px 0px;
+}
+
+#topnav {
+	background-color : #EEEEEE ;
+    	opacity: 1;
+    	height: 40px;
+    	position: fixed;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    	z-index: 1;
+    	overflow: visible;
+}
+
+
+#main p {
+	margin-bottom: 10px
+}
+
+
+/* About */
+
+#AboutLeftContent {
+	float:left;
+	width:70%;
+	word-wrap:break-word;	
+}
+
+#AboutRightContent {
+	float:left;
+	width:30%;
+	word-wrap:break-word;	
+}
+
+.size {
+	font-size: .9em;
+}
+/* About */
+
+/* Left Content */
+
+
+
+#AndroidLeftContent {
+	float:left;
+	width:16%;
+	word-wrap:break-word;	
+}
+
+
+#JavaLeftContent {
+	float:left;
+	width:16%;
+	word-wrap:break-word;	
+}
+
+.left_panel_heading {
+	color : #4B0082;
+}
+
+
+.left_panel_content 
+{
+	text-decoration : none;
+	color: #000;
+	font-size  : 13px;
+}
+
+
+#back-top {
+	position: fixed;
+	bottom: 110px;
+}
+
+
+#back-top a:hover {
+	color: #000;
+}
+
+
+#back-top span {
+	width: 50px;
+	height: 60px;
+	display: block;
+	margin-left : 61px;
+	background: #f5f6f1 url(../images/up4.jpg) no-repeat center center;
+
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+
+
+#back-top a:hover span {
+	background-color: #777;
+}
+
+
+/* Left Content */
+
+
+
+/* Center Content */
+
+
+#JavaCenterContent {
+	margin-left : 10px;
+	float:left;
+	width:72%;
+}
+
+
+#AndroidCenterContent {
+	margin-left : 10px;
+	float:left;
+	width:72%;
+}
+
+.prenext {
+	width : 100%;
+}
+
+.width {
+	width : 50%;
+}
+
+
+.previous
+{
+	color : #FF9900;
+	font-size : 14px;
+	line-height : 2;
+	text-decoration : none;
+}
+
+
+.next
+{
+	color : #FF9900;
+	font-size : 14px;
+	float : right;
+	line-height : 2;
+	margin-right : 10px;
+	text-decoration : none;
+}
+
+
+.full {
+	width : 100%;
+}
+
+
+#justify {
+	text-align : justify;
+}
+
+
+.headcenter {
+	text-align : center;
+	line-height : 4;
+}
+
+
+.headcenterJava {
+	text-align : center;
+	line-height : 3.2;
+}
+
+
+.center {
+	text-align : center;
+	line-height : 3;
+}
+
+.centerJava {
+	text-align : center;
+	line-height : 2.5;
+}
+
+
+table.src td {
+	border-collapse:collapse;
+	border:1px solid #aaa;
+}
+
+
+table.src th{
+	border-collapse:collapse;
+	border:1px solid #aaa;
+}
+
+
+table.src{
+	border:1px solid #aaa;
+	width:98%;
+	background-color:#f1f1f1;
+	border-collapse:collapse;
+	padding-left:5px;
+	vertical-align:top;
+}
+
+.AndroidNotes {
+	background-image:url('../images/android/android_ubuntu_logo.jpg');
+	background-repeat:no-repeat;
+	background-position:right center;
+	line-height : 2;
+	background-color: #EBF5FF;
+}
+
+
+.JavaNotes {
+	background-image:url('../images/java/java_ubuntu_logo.jpg');
+	background-repeat:no-repeat;
+	background-position:right center;
+	line-height : 2;
+	background-color: #EBF5FF;
+}
+
+
+#InnerNotes {
+	padding : 20px;
+}
+
+
+.continue
+{
+	color : #191970;
+	font-size: 20px;
+	text-align : center;
+}
+
+
+.OrderedList_Content {
+	list-style-position: inside;
+	list-style-type: upper-alpha;
+	font-size: 13px;
+	letter-spacing: 1px;
+	line-height: 2;
+	padding-left: 50px;
+}
+
+
+.List_Content_Java {
+	list-style-position: outside;
+	list-style-type: lower-latin;
+	font-size: 12px;
+	letter-spacing: 1px;
+	line-height: 1.8;
+	padding-left: 60px;
+}
+
+.ListContent {
+	color: #000;
+	text-decoration : none;
+}
+
+
+.program_heading {
+	color: #8B008B;
+	font-size: 16px;
+	letter-spacing: 0.8px;
+	line-height: 2;
+}
+
+
+.steps {
+	font-size: 13px;
+	line-height: 2;
+	color: #000;
+}
+
+
+.click_here {
+	text-decoration : none;
+}
+
+
+.step_important {
+	font-weight : bold;
+}
+
+
+.stepCount {
+	line-height: 2;
+	font-size: 14px;
+	color: #4169E1;
+}
+
+
+.stepinst {
+	line-height: 2;
+	font-size: 13px;
+	color: #000;
+	text-align : justify;
+}
+
+pre {
+	margin:0; 
+	padding:0; 
+	border:0; 
+	font-family : Monospace, Kalinga;
+	font-size:13px; 
+	vertical-align:baseline; 
+	background:transparent;
+	padding:5px; 
+	margin-bottom:10px; 
+	background-color:#eeeeee; 
+	overflow:auto; 
+	width:auto; 
+	width:200px !ie7;
+	padding-bottom:20px !ie7;
+	padding-top : 15px ;
+	padding-left : 10px ;
+	padding-right : 10px;
+	max-height:500px;
+	max-width:800px;
+}
+
+
+.text {
+	max-width:96%;
+}
+
+
+.keyword, .pagedirective {
+	color: #0000FF;
+}
+
+
+.leadattribute {
+	color : #000080;
+}
+
+
+.attribute {
+	color : #FF0000;
+}
+
+
+.string {
+	color: #800000;
+}
+
+
+.digit {
+	color: #4B0082;
+}
+
+
+.comment {
+	color : #A53;
+}
+
+
+.SummaryComment {
+	color : #A53;
+}
+
+
+.output {
+	width : 420px;
+	height : 420px;
+}
+
+.output_new {
+
+	width : 350px;
+	height : 400px;
+}
+
+
+.output_height {
+	width : 300px;
+	height : 420px;
+}
+
+
+.output_large {
+	width : 550px;
+	height : 400px;
+}
+
+
+.output_small {
+	width : 100px;
+	height : 100px;
+}
+
+
+
+
+
+
+/* Center Content */
+
+
+
+
+
+/* Right Content */
+
+
+
+#JavaRightContent {
+	margin-left : 20px;
+	float:left;
+	width:6%;
+	word-wrap:break-word;
+}
+
+
+#AndroidRightContent {
+	margin-left : 20px;
+	float:left;
+	width:6%;
+	word-wrap:break-word;
+}
+
+
+#footer_wrapper {
+	clear: both;
+	width: 100%;
+	background: url(../images/footer.jpg) top repeat-x;
+}
+
+.line {
+	line-height: 2;
+	color : #fff;
+}
+
+div
+{
+background-image:url('smiley.gif');
+background-repeat:no-repeat;
+background-position:center bottom;
+}
+
+/* Right Content */
+
+
+
+
+
+/* Common */
+
+
+img { 
+	border: none; 
+}
+
+
+h1, h2, h3, h4, h5, h6 { color: #000; font-weight: normal; }
+h1 { font-size: 34px; margin: 0 0 30px; padding: 5px 0 }
+h2 { font-size: 28px; margin: 0 0 25px; padding: 5px 0; }
+h3 { font-size: 22px; margin: 0 0 20px; padding: 0; }
+h4 { font-size: 18px; margin: 0 0 15px; padding: 0; }
+h5 { font-size: 16px; margin: 0 0 10px; padding: 0;  }
+h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
+
+
+a:hover {
+	color:#FF0000; 
+	background-color:transparent;
+}
+
+
+#italic {
+	font-size : 13px;
+	float : right;
+	margin-right : 30px;
+}
+
+
+#homeFeedback {
+	font-size : 13px;
+	float : right;
+}
+
+
+/* Fuick */
+
+
+.tablewid {
+	width : 98%;
+}
+
+.ninety {
+	width : 90%;
+}
+
+
+
+
+
+/* Fuick */
+
+
+
+/* Common */
+
+
+
+/* Balaji G */
+
+

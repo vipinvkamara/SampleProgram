@@ -1,0 +1,50 @@
+package com.anand.simplesite;
+
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.support.v7.app.ActionBarActivity;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class SecondActivity extends ActionBarActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.exc20);
+	}
+
+	public void loginBtn(View v) {
+		EditText edit_user=(EditText)findViewById(R.id.editText1);
+		EditText edit_pass=(EditText)findViewById(R.id.editText2);
+
+		String username_entered=edit_user.getText().toString();
+		String password_entered=edit_pass.getText().toString();
+//Get details..........
+		SharedPreferences sp=PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+		String username_saved=sp.getString("username", "");
+		String password_saved=sp.getString("password", "");
+
+		if(username_entered.equalsIgnoreCase(username_saved) && password_entered.equals(password_saved) ){
+			//sp.edit().putBoolean("login_status", true).commit();
+			Editor e=sp.edit();
+			e.putBoolean("login_status", true);
+			e.commit();
+
+			startActivity(new Intent(this, HomePage.class));
+			finish();
+		}else if(username_saved.equalsIgnoreCase("")){
+			Toast.makeText(getApplicationContext(), "No users found !\n Please Register an account first.", Toast.LENGTH_LONG).show();
+			startActivity(new Intent(this, ThirdActivity.class));
+			finish();
+		}else{
+			Toast.makeText(getApplicationContext(), "Login Failed", Toast.LENGTH_LONG).show();
+		}
+
+	}
+
+}

@@ -1,0 +1,32 @@
+<string-array name="aaa">
+        <item>data</item>
+        <item>data</item>
+        <item>data</item>
+        <item>data</item>
+        <item>data</item>
+    </string-array>
+    <string-array name="sss">
+        <item>value</item>
+        <item>value</item><item>value</item><item>value</item><item>value</item>
+    </string-array>
+
+
+
+
+ <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/aaa"
+        android:layout_marginTop="28dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_alignTop="@+id/spinner1"
+        android:layout_marginTop="49dp"
+        android:entries="@array/sss" />

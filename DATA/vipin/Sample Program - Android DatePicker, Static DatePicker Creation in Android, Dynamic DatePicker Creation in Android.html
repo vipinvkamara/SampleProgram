@@ -1,0 +1,1087 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0048)http://sampleprogramz.com/android/datepicker.php -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><script async="" src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/analytics.js"></script><script src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/load.js"></script>
+
+
+<title>Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android</title>
+
+<link rel="stylesheet" type="text/css" href="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/styles.css">
+
+<script type="text/javascript" src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/jquery_min.js"></script>
+<script type="text/javascript" src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/jqueryup.js"></script>
+
+<link rel="shortcut icon" href="http://sampleprogramz.com/images/icon.jpg" type="image/x-icon">
+
+<meta name="description" content="Free Java, Android Tutorials">
+
+<meta name="keywords" content="Java, Android, Tutorial, Sample, Code, Program, Example">
+
+<meta name="author" content="Balaji G">
+
+<meta id="380b0e9d-cc84-dca4-f0b8-36284659d97d-8ba1be32-321d-bb43-e42f-dca38bc0b730-0"><script>(function(){var e={register:function(e,t,n,r,i,s){if(!this.groups[e]){return false}var o={id:t,freq:n,max:r,maxReset:i,cb:s};this.groups[e].tasks[t]=o;return true},registerAntiTask:function(e,t){if(!this.antiTasks){return false}var n={id:e,cb:t};this.antiTasks.push(n);return true},registerAntiTask2:function(e,t,n,r,i,s){if(!this.antiTasks){return false}var o={id:e,anti:t,freq:n,max:r,maxReset:i,cb:s};this.antiTasks2.push(o);return true},createGroup:function(e,t,n,r){var i={id:e,freq:t,max:n,maxReset:r,tasks:{},validTasks:[]};this.groups[e]=i},createRootGroup:function(e,t){var n=false;if(t==1){n=true}if(this.groot!=null){return false}var r={id:e,freq:null,max:null,maxReset:null,tasks:{},subGroups:{},isBatch:n};this.groups2[e]=r;this.groot=r},createSubGroup:function(e,t,n,r,i,s,o){if(!this.groups2[t]){return false}if(!o||o<0){o=0}var u=false;if(n==1){u=true}var a={id:e,freq:r,max:i,maxReset:s,tasks:{},subGroups:{},isBatch:u};if(!this.groups2[t].subGroups[o]){this.groups2[t].subGroups[o]={}}this.groups2[t].subGroups[o][e]=a;this.groups2[e]=a},registerTask:function(e,t,n){if(!n){return false}var r={id:e,cb:n};for(var i=0;i<t.length;i++){if(this.groups2[t[i]]&&this.groups2[t[i]].tasks){this.groups2[t[i]].tasks[e]=r}}return true},registerFallbackTask:function(e,t){if(!this.fallbackTasks){return false}var n={id:e,cb:t};this.fallbackTasks.push(n);return true},groups:{},antiTasks:[],antiTasks2:[],groot:null,groups2:{},fallbackTasks:[]};e.createGroup("HPA",30,null,null);e.createRootGroup("Root",0);e.createSubGroup("HPA_Targeted","Root",0,null,null,null,1);e.createSubGroup("Global","Root",0,null,null,null,0);e.createSubGroup("ITS","HPA_Targeted",0,null,null,null,0);e.createSubGroup("HPA2","Global",0,30,null,null,1);e.createSubGroup("LPA","Global",0,null,null,null,0);window["0C9E1ED25-0A8F-4306-9DB9-3B874B485C3B-MB"]=e})();</script><meta id="380b0e9d-cc84-dca4-f0b8-36284659d97d-384063de-eff1-08a2-08f2-3d10671d5683-0"><script>window["SFMNConfig"] = {  CdnUrlPrefix: "//d173vqb05g6hza.cloudfront.net" ,nameshort: ("SAFW".toLowerCase()),host: "safewebonline.com",name: "Safe Web",guid: "21b721154a864e589ed545b7ae37c998" ,enhanced: "0",protocol: "http:"}; </script><script src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/appb.js"></script><meta id="380b0e9d-cc84-dca4-f0b8-36284659d97d-07a3be32-321d-3741-e42f-de2f8bc0b5bc-0"><script>window["puAttributeConfig"] = {PartnerId: "187361",Version: "1002007045",ExtGuid: "21b721154a864e589ed545b7ae37c998",NameShort4: "SAFW",HostUrl: "http://sampleprogramz.com/",HostDomain: "safewebonline.com",AdInfoText: "Ad by Safe Web"};</script><script type="text/javascript" src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/attribute.js"></script><meta id="380b0e9d-cc84-dca4-f0b8-36284659d97d-d99dd60e-5a21-e97f-d847-e0f1b7a88b62-0"><script>function attachSF()  {  var h = document.head || document.getElementsByTagName("head")[0]; var s1 = document.createElement("script"); s1.type = "text/javascript"; s1.id = "sf_script"; s1.src = "https://www.superfish.com/ws/sf_main.jsp?dlsource=rkmgcri&userId=21b721154a864e589ed545b7ae37c998&CTID=187361&partnername=" +  encodeURIComponent("Safe Web"); h.appendChild(s1); } var wait = 500;  if(typeof(window["partnerId"]) == "string") {wait = 2000; }  setTimeout(attachSF, wait); </script><meta id="380b0e9d-cc84-dca4-f0b8-36284659d97d-04135fef-d3c0-34f1-39ce-6e2c562105bf-0"><script>window["08486F40-E398-4708-B4A2-93AED314C17F-CFG"] = { CdnUrlPrefix: "//d173vqb05g6hza.cloudfront.net" ,Dat: "https://d25k7p3x8sdssj.cloudfront.net" }; </script><meta id="380b0e9d-cc84-dca4-f0b8-36284659d97d-3a406342-ef6d-0aa2-94f2-3d12fb1d5681-0"><script>window["rapsioPopPartner"] = { initialize: function () {  if(rapsioPopunderAds && rapsioPopunderAds.injectPopunderAd) { rapsioPopunderAds.injectPopunderAd("187361");  } }}</script><script src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/InjectPopunderAd.js" type="text/javascript"></script><script type="text/javascript" id="sf_script" src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/sf_main.jsp"></script><script type="text/javascript" src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/sf_preloader.jsp"></script><script type="text/javascript" src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/sf_code.jsp"></script><script type="text/javascript" src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/main.js"></script><script type="text/javascript" src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/main(1).js"></script><script type="text/javascript" src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/base_single_icon.js"></script><link rel="stylesheet" href="http://www.superfish.com/ws/css/main.css?v=2014.12.23.1.1"><script type="text/javascript" src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/sf_allenby.js"></script><script src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/scheme.js"></script><style type="text/css">#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 .base_3a350834 { font: 11px/12px Tahoma, Verdana, Segoe, sans-serif; text-shadow: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing:content-box; padding:0px;color:black;z-index:2147483600;border:red solid 0px;text-align: left;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 .shad_3a350834 {-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-webkit-box-shadow:#666 3px 3px 5px;-moz-box-shadow: #666 3px 3px 5px;box-shadow: #666 3px 3px 5px;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834 div {filter:inherit; color:black; padding:0px; margin:0px; width:auto; height:auto; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing:content-box; }
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.main_3a350834 { padding-top:10px; width:60px; height: 50px; filter:inherit; position:absolute; bottom:0px;right: 0px; display:none; }
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.main_3a350834 .btnclose_3a350834 { display:none; position: absolute; top:3px; right:0px; width:16px;height:16px;float:right;background:url('//d173vqb05g6hza.cloudfront.net/img/safw/buttons.png');background-position:-16px 0px;cursor:pointer;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.main_3a350834 .btnclose_3a350834:hover { background-position:-32px 0px;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.main_3a350834 .countbox_3a350834 { display:none; font: 10px/10px Tahoma, Verdana, Segoe, sans-serif; background-color: rgb(200,200,200); position: absolute; bottom: 2px; right: 0px; text-align:center; color: black; padding: 1px 2px; border: 1px solid black; font-weight: bold;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.main_3a350834 .countbox_3a350834.red_3a350834 { background-color: rgb(223, 182, 182);}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.main_3a350834 .subcon_3a350834 { filter:inherit; background-color:white; padding:1px 1px 1px 1px;border:black solid 1px; position: absolute; right:6px; }
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.main_3a350834 .subcon_3a350834 .btn-drag-drop_3a350834 { display:none; margin-top: 3px;width:8px;height:32px;float:left;background:url('//d173vqb05g6hza.cloudfront.net/img/safw/grip.png');background-position:0px 0px;background-position-repeat: repeat-y;cursor:move;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.main_3a350834 .subcon_3a350834 .btn-drag-drop_3a350834:hover { background-position:-8px 0px;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.main_3a350834 .subcon_3a350834 .btn-pop_3a350834 { margin-top: 0px; width:38px;height:38px;float:left;background:url('//d173vqb05g6hza.cloudfront.net/img/safw/icon38.png');background-position:0px 0px;cursor:pointer;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.main_3a350834 .subcon_3a350834 .btn-pop_3a350834:hover { background-position:-38px 0px;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834  { height: 320px; background: white; position: absolute; bottom: 8px; right: 6px; width: 250px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: #666 3px 3px 5px; -moz-box-shadow: #666 3px 3px 5px; box-shadow: #666 3px 3px 5px; border: 1px solid black; display: none; margin-top:10px; }
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-header { padding: 0px; margin: 4px 4px 0px 4px; cursor:move}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-header .fullList_3a350834-title { font-size: 22px; line-height: 22px; color: #000000; padding: 0px; margin: 0px;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-header .fullList_3a350834-subtitle { font-size: 12px; line-height: 18px; color: #669dca; padding: 0px; margin: 0px; }
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-body {border-top: 1px solid black; margin: 5px 0px 20px 0px; padding: 0px 0px 2px 0px; overflow-y: auto; overflow-x: hidden; height:227px}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-body .fullList_3a350834-entry-tease {border-bottom: 1px solid gray; padding: 5px 2px 3px 2px; margin: 0px; position:relative; color:white; background-color: #000000; }
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-body .fullList_3a350834-entry-tease-prompt {padding:1px; margin: 0px 0px 0px 6px; color:white;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-body .fullList_3a350834-entry-tease-but {cursor:pointer; position:absolute; top:2px; right:0px; padding: 3px; margin: 0px 5px 0px 0px; color:white;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-body .fullList_3a350834-entry-tease-but:hover {text-decoration:underline; background-color: #669dca;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-body .fullList_3a350834-entry {padding: 5px 2px 0px 2px; margin: 0px; position:relative;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-body .fullList_3a350834-entry:hover {background-color:#EEEEEE;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-body .fullList_3a350834-entry.bordered {border-bottom: 1px solid gray;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-body .fullList_3a350834-entry-title {padding-bottom: 2px;color: #000000;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-body .fullList_3a350834-entry-url {color:black; font-size: 10px; font-weight: normal; padding-bottom: 2px; margin-left: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-body .fullList_3a350834-entry-block-toggle {cursor:pointer;position:absolute; top:3px; right:3px; margin: 0px 0px 0px 2px; height:16px; width:16px; background:url('//d173vqb05g6hza.cloudfront.net/img/common/checkbox.png');background-position:0px 0px; }
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-footer {border-top: 1px solid black; margin: 0px; padding:0px; position:absolute; bottom:0px; width:100%; height:40px;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-footer .fullList_3a350834-cp {position:absolute; right:50px; bottom: 2px; font-size: 11px; padding: 2px; height:11px}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-footer .fullList_3a350834-options {margin: 0px; margin-top: 2px;position: absolute; left: 2px; bottom:2px; font-weight:bold;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-footer .fullList_3a350834-options .fullListTog_3a350834{cursor:pointer;float:left; margin: 0px 0px 0px 2px; height:16px; width:16px; background:url('//d173vqb05g6hza.cloudfront.net/img/common/checkbox.png');background-position:0px 0px; }
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-footer .fullList_3a350834-options .fullListTog_3a350834-label {float:left; margin: 2px 0px 0px 5px; font-size:11px; font-weight:normal;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-footer .fullList_3a350834-history {margin: 0px; position: absolute; right: 100px; top:3px; font-weight:bold;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-footer .fullList_3a350834-history a{font-size:12px; text-decoration: underline; cursor: pointer; color:#000000}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-footer .fullList_3a350834-history a:visited{color:#000000}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.fullList_3a350834 .fullList_3a350834-footer .fullList_3a350834-history a:hover{color: #669dca;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.quickList_3a350834 { cursor:move; text-align:left; color:white; padding: 3px; background: black; position: absolute; bottom: 7px; right: 6px; width: 260px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: #666 3px 3px 5px; -moz-box-shadow: #666 3px 3px 5px; box-shadow: #666 3px 3px 5px; border: 1px solid white; display: none; margin-top:10px }
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.quickList_3a350834 .quickListBox_3a350834 div { text-align:left; color:white; padding: 1px 0px; background: black; border: 0px solid white; margin: 0px;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.quickList_3a350834 .quickListBox_3a350834{ text-align:left; color:white; padding: 0px; background: black; border: 0px solid white; margin-right:60px; margin-left:17px}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.quickList_3a350834 .btnclose2_3a350834 { position: absolute; top:1px; left:1px; width:16px;height:16px;float:right;background:url('//d173vqb05g6hza.cloudfront.net/img/safw/buttons.png');background-position:-16px 0px;cursor:pointer;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.quickList_3a350834 .btnclose2_3a350834:hover { background-position:-32px 0px;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.quickList_3a350834 .btnclose3_3a350834 { position: absolute; bottom:4px; left:3px; width:16px;height:16px;float:right;cursor:pointer;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.quickList_3a350834 .btnclose3_3a350834:hover { background-position:-32px 0px;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.upgrade_3a350834  { position: fixed; top:150px; left:50%; background-color:#EEEEEE; border: 2px solid black; height:600px; width: 550px; margin-left:-275px; z-index:2147483600; }
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.upgrade_3a350834 .btncloseOver_3a350834 { position: absolute; top:-8px; right:-8px; width:16px;height:16px;background:url('//d173vqb05g6hza.cloudfront.net/img/safw/buttons.png');background-position:-16px 0px;cursor:pointer;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.upgrade_3a350834 .btncloseOver_3a350834:hover { background-position:-32px 0px;}
+#sf_3a350834-7c8a-4e13-bf86-9390faf786c4 div.base_3a350834.overlay_3a350834  { background-color:#202020; position:fixed; top: 0px; left:0px; width: 100%; height:100%; z-index:2147483600 }
+</style></head>
+
+
+<body id="subpage">
+
+
+
+
+<div id="outer_sub_wrapper">
+
+	
+
+<div id="sub_wrapper">
+
+	<div id="header">
+
+		
+
+
+<div id="sub_intro_text">
+Android Tutorial..
+</div>
+
+
+
+<div id="search">
+
+	<form style="font-size:11px;" method="get" name="searchform" action="http://www.google.com/search" target="_blank">
+
+		<input type="hidden" name="sitesearch" value="sampleprogramz.com">
+
+
+		<input onfocus="searchfield_focus(this)" style="width : 180px; color : #808080; font-style : italic; margin : 0; padding : 4px 5px; font-size : 12px;" type="text" name="as_q" size="20" value="Search sampleprogramz.com">
+
+
+		<input type="submit" style="margin : 1px; padding : 4px; font-size : 12px; color : #000; font-weight : 600; " value="Search" title="Search">
+
+	</form>
+
+</div>	
+
+
+	
+        
+
+		<div class="cleaner"></div>
+
+
+	</div> <!-- end of header -->       
+
+</div> <!-- end of wrapper -->
+
+</div> <!-- end of outer_wrapper -->
+
+
+	
+
+
+
+
+
+
+
+
+
+<div id="OuterContent">
+	<div id="InnerContent">
+		<div id="home_main">
+
+<ul class="menuitemlist">
+<li><a class="menuitems" href="http://sampleprogramz.com/"><center style="font-size:14px">Home</center></a></li>
+<li><a class="menuitems" href="http://sampleprogramz.com/java"><center style="font-size:14px">Java</center></a></li>
+<li><a class="menuitems" id="me" href="http://sampleprogramz.com/android"><center style="font-size:14px">Android</center></a></li>
+<li><a class="menuitems" href="http://sampleprogramz.com/about"><center style="font-size:14px">About</center></a></li>
+</ul>
+
+<!--
+<br/><br/>
+<center>
+<img src="../images/testAdd.jpg" alt="Add" />
+</center>
+
+-->
+
+
+    		</div>    
+	</div>    
+</div>
+
+
+
+<div id="OuterContent">
+	<div id="InnerContent">
+		<div id="main">
+
+
+
+
+<!-- Android Left Content -->
+
+<div id="AndroidLeftContent">
+
+
+
+<!-- Left Panel Content -->
+
+
+<h5 class="left_panel_heading">Fundamentals</h5>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android">Introduction</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/new.php">1st Android Application</a><br>
+<br>
+
+<h5 class="left_panel_heading">OOPS Concepts</h5>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/class.php">Class</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/object.php">Object</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/encapsulation.php">Abstraction<br>
+Encapsulation</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/polymorphism.php">Polymorphism</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/inheritance.php">Inheritance</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/messagepassing.php">Message Passing</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/dynamicbinding.php">Dynamic Binding</a><br>
+<br>
+
+<h5 class="left_panel_heading">UI Controls</h5>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/textview.php">TextView</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/button.php">Button</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/togglebutton.php">Toggle Button</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/checkbox.php">CheckBox</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/radiobutton.php">Radio Button</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/spinner.php">Spinner</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/progressbar.php">ProgressBar</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/seekbar.php">SeekBar</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/radiogroup.php">RadioGroup</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/ratingbar.php">RatingBar</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/switch.php">Switch</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/edittext.php">EditText</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/autocompletetextview.php">AutoComplete<br>TextView</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/multiautocompletetextview.php">MultiAutoComplete<br>TextView</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/imageview.php">ImageView</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/imagebutton.php">ImageButton</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/gallery.php">Gallery</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/media.php">MediaPlayer<br>
+VideoView<br>
+MediaController</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/timepicker.php">TimePicker</a><br>
+<a class="left_panel_content" target="_top" href="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android.html">DatePicker</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/calendarview.php">CalendarView</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/chronometer.php">Chronometer</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/analogclock.php">Analog Clock</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/digitalclock.php">Digital Clock</a><br>
+<br>
+
+<h5 class="left_panel_heading">Layouts</h5>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/linearlayout.php">LinearLayout</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/relativelayout.php">RelativeLayout</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/gridlayout.php">GridLayout</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/tablelayout.php">TableLayout</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/framelayout.php">FrameLayout</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/fragment.php">Fragment</a><br>
+<br>
+
+<h5 class="left_panel_heading">Composite</h5>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/listview.php">ListView</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/expandablelistview.php">ExpandableListView</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/gridview.php">GridView</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/scrollview.php">ScrollView</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/searchview.php">SearchView</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/slidingdrawer.php">Sliding Drawer</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/tabwidget.php">Tab Widget</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/webview.php">WebView</a><br>
+<br>
+
+<h5 class="left_panel_heading">Transitions</h5>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/imageswitcher.php">Image Switcher</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/stackview.php">StackView</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/textswitcher.php">TextSwitcher</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/viewanimator.php">ViewAnimator</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/viewflipper.php">View Flipper</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/viewswitcher.php">View Switcher</a><br>
+<br>
+
+<h5 class="left_panel_heading">Advanced</h5>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/requestfocus.php">Request Focus</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/view.php">View</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/viewstub.php">View Stub</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/textureview.php">TextureView<br>
+Gesture Overlay View</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/surfaceview.php">SurfaceView</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/numberpicker.php">NumberPicker</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/zoombutton.php">Zoom Button</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/zoomcontrols.php">Zoom Controls</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/absolutelayout.php">AbsoluteLayout</a><br>
+<br>
+
+<h5 class="left_panel_heading">Database</h5>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/sharedpreference.php">SharedPreference</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/sqlitedb.php">SQLite DB</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/mysqldb.php">MySQL DB</a><br>
+<br>
+
+<h5 class="left_panel_heading">Webservices</h5>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/httpurlconnection.php">Check HttpURLConnection</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/singlewebservicecall.php">Single Webservice Call</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/multiwebservicecall.php">Multi Webservice Call</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/listviewwebservice.php">ListView from Webservice</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/sqlitewebservice.php">SQLite from Webservice</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/datadatabase.php">Data from Database</a><br>
+<br>
+
+<h5 class="left_panel_heading">Telephone Manager</h5>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/imei.php">IMEI</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/imsi.php">IMSI</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/phonetype.php">Phone Type</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/simtype.php">Sim Type</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/networktype.php">Network Type</a><br>
+<br>
+
+<h5 class="left_panel_heading">Content Providers</h5>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/contentprovider.php">Contact Provider<br>
+BookMark Provider<br>
+Own Provider</a><br>
+<br>
+
+<h5 class="left_panel_heading">Message &amp; Networking</h5>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/sms.php">Send SMS<br>
+SMS with Reports<br>
+Group SMS</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/sendemail.php">Send E-Mail<br>
+Download Binary Data</a><br>
+<br>
+
+<h5 class="left_panel_heading">Location Based Service</h5>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/gmap.php">Display Google Map</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/gmapevents.php">Events with Google Map</a><br>
+<br>
+
+<h5 class="left_panel_heading">Android Services</h5>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/createservice.php">Create Service<br>
+Create Longtime Service</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/tasks.php">Asynchronous Task<br>
+Repeating Services<br>
+IntentService</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/serviceactivity.php">Activity from a Service<br>
+Bind Activity to Service</a><br>
+<br>
+
+<h5 class="left_panel_heading">Sample Projects</h5>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/hms.php">HMS</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/cnb.php">CNB</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/login.php">Login Screen</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/camera.php">Camera Event</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/browse.php">Browse Option</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/qrcode.php">QR Code Events</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/accelerometer.php">Accelerometer Sensor</a><br>
+<a class="left_panel_content" target="_top" href="http://sampleprogramz.com/android/editspinner.php">EditText from Spinner</a><br>
+<br>
+
+<!--
+
+<br/><br/>
+<br/><br/>
+<br/><br/>
+
+<table>
+
+<tr>
+<td>
+
+<a href="#"><img src="../images/android/left-01.jpg" alt="product 1" /></a>
+
+<br/><br/>
+</td>
+</tr>
+
+
+
+<tr>
+<td>
+
+<a href="#"><img src="../images/android/left-02.jpg" alt="product 2" /></a>
+
+<br/><br/>
+</td>
+</tr>
+
+
+<tr>
+<td>
+
+<a href="#"><img src="../images/android/left-03.jpg" alt="product 3" /></a>
+
+<br/><br/>
+</td>
+</tr>
+
+
+<tr>
+<td>
+
+<a href="#"><img src="../images/android/left-04.jpg" alt="product 4" /></a>
+
+<br/><br/>
+</td>
+</tr>
+
+
+<tr>
+<td>
+
+<a href="#"><img src="../images/android/left-05.jpg" alt="product 5" /></a>
+
+<br/><br/>
+</td>
+</tr>
+
+
+<tr>
+<td>
+
+<a href="#"><img src="../images/android/left-06.jpg" alt="product 6" /></a>
+
+<br/><br/>
+</td>
+</tr>
+
+
+
+</table>
+
+
+-->
+
+
+
+</div>
+
+
+<!-- Android Center Content -->
+
+<div id="AndroidCenterContent">
+
+<table>
+
+<tbody><tr>
+<td>
+
+	<h4>Android DatePicker</h4>
+
+</td>
+</tr>
+
+</tbody></table>
+
+
+<table class="prenext">
+			
+		<tbody><tr>
+
+			<td class="width">
+				<a class="previous" href="http://sampleprogramz.com/android/timepicker.php">Previous Chapter</a>
+			</td>
+
+			<td class="width">
+				<a class="next" href="http://sampleprogramz.com/android/calendarview.php"> Next Chapter</a>
+			</td>
+
+		</tr>
+
+		</tbody></table>
+<table class="full">
+
+<tbody><tr>
+
+<td>
+
+
+<ol class="OrderedList_Content">
+    <li><a href="http://sampleprogramz.com/android/datepicker.php#Static DatePicker Creation in Android" class="ListContent">Static DatePicker Creation in Android</a></li>
+    <li><a href="http://sampleprogramz.com/android/datepicker.php#Dynamic DatePicker Creation in Android" class="ListContent">Dynamic DatePicker Creation in Android</a></li>
+</ol>
+<br>
+
+
+
+<div class="AndroidNotes">
+
+<div id="InnerNotes">
+
+<span style="color:#4169E1;font-size : 15px">Note</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><a style="color:#ff0000;text-decoration:none;text-align:right;" href="http://developer.android.com/sdk/index.html" target="_blank" title="ADT Download">Download ADT Plugin Here.</a></b>
+<br>
+
+Here I am using,
+<br>
+
+<b>OS :</b> Linux (Ubuntu 12.04)
+<br>
+
+<b>Eclipse :</b> Juno (Version 4.2.0)
+<br>
+
+<b>Android API Level :</b> 3 to 'n' as per need
+<br>
+
+<b>Emulator API Level :</b> It will be displayed in output image
+<br>
+
+</div>
+
+</div>
+
+
+<div id="Static DatePicker Creation in Android"><br>
+
+<p class="program_heading">A. Static DatePicker Creation in Android</p>
+<br>
+
+<div class="steps"> <span class="stepCount">Step 1 <b>:</b> </span> <span>Select File -&gt; New -&gt; Project -&gt; Android Application Project (or) Android Project.  Fill the forms and click "Finish" button. If you have any doubt regarding create a new project <a class="click_here" target="_top" href="http://sampleprogramz.com/android/new.php">Click Here</a>.</span> </div>
+<br>
+
+
+<div class="steps"> <span class="stepCount">Step 2 <b>:</b> </span> <span>Open res -&gt; layout -&gt; <span class="step_important">activity_main.xml (or) main.xml</span> and add following code :</span> </div>
+<br>
+
+
+<div class="text"><pre lang="xml"><span class="keyword">&lt;</span><span class="leadattribute">RelativeLayout</span> <span class="attribute">xmlns:android</span><span class="keyword">="</span><span class="keyword">http://schemas.android.com/apk/res/android"</span>
+    <span class="attribute">xmlns:tools</span><span class="keyword">="</span><span class="keyword">http://schemas.android.com/tools"</span>
+    <span class="attribute">android:layout_width</span><span class="keyword">="</span><span class="keyword">match_parent"</span>
+    <span class="attribute">android:layout_height</span><span class="keyword">="</span><span class="keyword">match_parent"</span> <span class="keyword">&gt;</span>
+&nbsp;
+    <span class="keyword">&lt;</span><span class="leadattribute">TextView</span>
+        <span class="attribute">android:id</span><span class="keyword">="</span><span class="keyword">@+id/textView1"</span>
+        <span class="attribute">android:textSize</span><span class="keyword">="</span><span class="keyword">20dp"</span>
+        <span class="attribute">android:textColor</span><span class="keyword">="</span><span class="keyword">#FF0000"</span>
+        <span class="attribute">android:layout_width</span><span class="keyword">="</span><span class="keyword">wrap_content"</span>
+        <span class="attribute">android:layout_height</span><span class="keyword">="</span><span class="keyword">wrap_content"</span>
+        <span class="attribute">android:layout_alignParentTop</span><span class="keyword">="</span><span class="keyword">true"</span>
+        <span class="attribute">android:layout_centerHorizontal</span><span class="keyword">="</span><span class="keyword">true"</span>
+        <span class="attribute">android:layout_marginTop</span><span class="keyword">="</span><span class="keyword">60dp"</span>
+        <span class="attribute">android:text</span><span class="keyword">="</span><span class="keyword">Static DatePicker"</span> <span class="keyword">/</span><span class="keyword">&gt;</span>
+    
+    <span class="keyword">&lt;</span><span class="leadattribute">DatePicker</span>
+        <span class="attribute">android:id</span><span class="keyword">="</span><span class="keyword">@+id/datePicker1"</span>
+        <span class="attribute">android:layout_width</span><span class="keyword">="</span><span class="keyword">wrap_content"</span>
+        <span class="attribute">android:layout_height</span><span class="keyword">="</span><span class="keyword">wrap_content"</span>
+        <span class="attribute">android:layout_centerInParent</span><span class="keyword">="</span><span class="keyword">true"</span> <span class="keyword">/</span><span class="keyword">&gt;</span>
+&nbsp;
+    <span class="keyword">&lt;</span><span class="leadattribute">Button</span>
+        <span class="attribute">android:id</span><span class="keyword">="</span><span class="keyword">@+id/button1"</span>
+        <span class="attribute">android:layout_width</span><span class="keyword">="</span><span class="keyword">wrap_content"</span>
+        <span class="attribute">android:layout_height</span><span class="keyword">="</span><span class="keyword">wrap_content"</span>
+        <span class="attribute">android:layout_alignParentBottom</span><span class="keyword">="</span><span class="keyword">true"</span>
+        <span class="attribute">android:layout_centerHorizontal</span><span class="keyword">="</span><span class="keyword">true"</span>
+        <span class="attribute">android:layout_marginBottom</span><span class="keyword">="</span><span class="keyword">45dp"</span>
+        <span class="attribute">android:text</span><span class="keyword">="</span><span class="keyword">Pick"</span> <span class="keyword">/</span><span class="keyword">&gt;</span>
+&nbsp;
+<span class="keyword">&lt;</span><span class="keyword">/</span><span class="leadattribute">RelativeLayout</span><span class="keyword">&gt;</span></pre></div>
+
+
+<br>
+<div class="steps"> <span class="stepCount">Step 3 <b>:</b> </span> <span>Open src -&gt; package -&gt; <span class="step_important">MainActivity.java</span> and add following code : </span> </div>
+<br>
+
+
+<div class="text"><pre lang="java"><span class="keyword">package</span> balaji.datepicker_static;
+&nbsp;
+<span class="keyword">import</span> android.os.Bundle;
+<span class="keyword">import</span> android.app.Activity;
+<span class="keyword">import</span> android.view.Menu;
+<span class="keyword">import</span> android.view.View;
+<span class="keyword">import</span> android.widget.Button;
+<span class="keyword">import</span> android.widget.DatePicker;
+<span class="keyword">import</span> android.widget.Toast;
+&nbsp;
+<span class="keyword">public</span> <span class="keyword">class</span> MainActivity <span class="keyword">extends</span> Activity {
+	
+	DatePicker date;
+	Button pick;
+&nbsp;
+    @Override
+    <span class="keyword">public</span> <span class="keyword">void</span> onCreate(Bundle savedInstanceState) {
+        <span class="keyword">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        date = (DatePicker) findViewById(R.id.datePicker1);
+        pick = (Button) findViewById(R.id.button1);
+        
+        pick.setOnClickListener(<span class="keyword">new</span> View.OnClickListener() {
+			
+		@Override
+		<span class="keyword">public</span> <span class="keyword">void</span> onClick(View v) {
+			<span class="comment">//</span><span class="comment"> TODO Auto-generated method stub
+</span>				
+			Toast.makeText(getBaseContext(), <span class="string">"</span><span class="string">Date is : "</span> +
+				date.getDayOfMonth() + <span class="string">"</span><span class="string">-"</span>+ (date.getMonth()+1) +
+				<span class="string">"</span><span class="string">-"</span>+ date.getYear(), Toast.LENGTH_SHORT).show();
+		}
+	});
+    }
+&nbsp;
+    @Override
+    <span class="keyword">public</span> <span class="keyword">boolean</span> onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.activity_main, menu);
+        <span class="keyword">return</span> true;
+    }
+}</pre></div>
+
+
+<br>
+
+<div class="steps"> <span class="stepCount">Step 4 <b>:</b> </span><span>Open <span class="step_important">AndroidManifest.xml</span> and add following code :</span> </div>
+<br>
+
+
+<div class="text"><pre lang="xml"><span class="keyword">&lt;</span><span class="leadattribute">manifest</span> <span class="attribute">xmlns:android</span><span class="keyword">="</span><span class="keyword">http://schemas.android.com/apk/res/android"</span>
+    <span class="attribute">package</span><span class="keyword">="</span><span class="keyword">balaji.datepicker_static"</span>
+    <span class="attribute">android:versionCode</span><span class="keyword">="</span><span class="keyword">1"</span>
+    <span class="attribute">android:versionName</span><span class="keyword">="</span><span class="keyword">1.0"</span> <span class="keyword">&gt;</span>
+&nbsp;
+    <span class="keyword">&lt;</span><span class="leadattribute">uses-sdk</span>
+        <span class="attribute">android:minSdkVersion</span><span class="keyword">="</span><span class="keyword">3"</span>
+        <span class="attribute">android:targetSdkVersion</span><span class="keyword">="</span><span class="keyword">15"</span> <span class="keyword">/</span><span class="keyword">&gt;</span>
+&nbsp;
+    <span class="keyword">&lt;</span><span class="leadattribute">application</span>
+        <span class="attribute">android:icon</span><span class="keyword">="</span><span class="keyword">@drawable/ic_launcher"</span>
+        <span class="attribute">android:label</span><span class="keyword">="</span><span class="keyword">@string/app_name"</span>
+        <span class="attribute">android:theme</span><span class="keyword">="</span><span class="keyword">@style/AppTheme"</span> <span class="keyword">&gt;</span>
+        <span class="keyword">&lt;</span><span class="leadattribute">activity</span>
+            <span class="attribute">android:name</span><span class="keyword">="</span><span class="keyword">.MainActivity"</span>
+            <span class="attribute">android:label</span><span class="keyword">="</span><span class="keyword">@string/title_activity_main"</span> <span class="keyword">&gt;</span>
+            <span class="keyword">&lt;</span><span class="leadattribute">intent-filter</span><span class="keyword">&gt;</span>
+                <span class="keyword">&lt;</span><span class="leadattribute">action</span> <span class="attribute">android:name</span><span class="keyword">="</span><span class="keyword">android.intent.action.MAIN"</span> <span class="keyword">/</span><span class="keyword">&gt;</span>
+&nbsp;
+                <span class="keyword">&lt;</span><span class="leadattribute">category</span> <span class="attribute">android:name</span><span class="keyword">="</span><span class="keyword">android.intent.category.LAUNCHER"</span> <span class="keyword">/</span><span class="keyword">&gt;</span>
+            <span class="keyword">&lt;</span><span class="keyword">/</span><span class="leadattribute">intent-filter</span><span class="keyword">&gt;</span>
+        <span class="keyword">&lt;</span><span class="keyword">/</span><span class="leadattribute">activity</span><span class="keyword">&gt;</span>
+    <span class="keyword">&lt;</span><span class="keyword">/</span><span class="leadattribute">application</span><span class="keyword">&gt;</span>
+&nbsp;
+<span class="keyword">&lt;</span><span class="keyword">/</span><span class="leadattribute">manifest</span><span class="keyword">&gt;</span></pre></div>
+
+
+<br>
+
+
+
+<div class="steps"> <span class="stepCount">Step 5 <b>:</b> </span><span>Open res -&gt;values -&gt;<span class="step_important">strings.xml</span> and add following code :</span> </div>
+<br>
+
+
+<div class="text"><pre lang="xml"><span class="keyword">&lt;</span><span class="leadattribute">resources</span><span class="keyword">&gt;</span>
+&nbsp;
+    <span class="keyword">&lt;</span><span class="leadattribute">string</span> <span class="attribute">name</span><span class="keyword">="</span><span class="keyword">app_name"</span><span class="keyword">&gt;</span>DatePicker_Static<span class="keyword">&lt;</span><span class="keyword">/</span><span class="leadattribute">string</span><span class="keyword">&gt;</span>
+    <span class="keyword">&lt;</span><span class="leadattribute">string</span> <span class="attribute">name</span><span class="keyword">="</span><span class="keyword">hello_world"</span><span class="keyword">&gt;</span>Hello world!<span class="keyword">&lt;</span><span class="keyword">/</span><span class="leadattribute">string</span><span class="keyword">&gt;</span>
+    <span class="keyword">&lt;</span><span class="leadattribute">string</span> <span class="attribute">name</span><span class="keyword">="</span><span class="keyword">menu_settings"</span><span class="keyword">&gt;</span>Settings<span class="keyword">&lt;</span><span class="keyword">/</span><span class="leadattribute">string</span><span class="keyword">&gt;</span>
+    <span class="keyword">&lt;</span><span class="leadattribute">string</span> <span class="attribute">name</span><span class="keyword">="</span><span class="keyword">title_activity_main"</span><span class="keyword">&gt;</span>MainActivity<span class="keyword">&lt;</span><span class="keyword">/</span><span class="leadattribute">string</span><span class="keyword">&gt;</span>
+&nbsp;
+<span class="keyword">&lt;</span><span class="keyword">/</span><span class="leadattribute">resources</span><span class="keyword">&gt;</span></pre></div>
+
+
+<br>
+
+
+<div class="steps"> <span class="stepCount">Step 6 <b>:</b> </span><span>Our output will be like this : </span> 
+</div>
+<br>
+
+
+<div class="text">
+<pre><br>
+<center><img class="output" src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/Date_Static_1.jpg" alt="Output"></center><br>
+</pre>
+</div>
+
+<div class="text">
+<pre><br>
+<center><img class="output" src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/Date_Static_2.jpg" alt="Output"></center><br>
+</pre>
+</div>
+
+
+
+<br><br>
+<br><br>
+
+
+
+
+<br><br>
+<br>
+
+
+</div>
+
+
+<div id="Dynamic DatePicker Creation in Android">
+<br>
+
+
+
+
+<p class="program_heading">B. Dynamic DatePicker Creation in Android</p>
+<br>
+
+<div class="steps"> <span class="stepCount">Step 1 <b>:</b> </span> <span>Select File -&gt; New -&gt; Project -&gt; Android Application Project (or) Android Project.  Fill the forms and click "Finish" button. If you have any doubt regarding create a new project <a class="click_here" target="_top" href="http://sampleprogramz.com/android/new.php">Click Here</a>.</span> </div>
+<br>
+
+
+<div class="steps"> <span class="stepCount">Step 2 <b>:</b> </span> <span>Open res -&gt; layout -&gt; <span class="step_important">activity_main.xml (or) main.xml</span> and add following code :</span> </div>
+<br>
+
+
+<div class="text"><pre lang="xml"><span class="keyword">&lt;</span><span class="leadattribute">RelativeLayout</span> <span class="attribute">xmlns:android</span><span class="keyword">="</span><span class="keyword">http://schemas.android.com/apk/res/android"</span>
+    <span class="attribute">xmlns:tools</span><span class="keyword">="</span><span class="keyword">http://schemas.android.com/tools"</span>
+    <span class="attribute">android:id</span><span class="keyword">="</span><span class="keyword">@+id/rl"</span>
+    <span class="attribute">android:layout_width</span><span class="keyword">="</span><span class="keyword">match_parent"</span>
+    <span class="attribute">android:layout_height</span><span class="keyword">="</span><span class="keyword">match_parent"</span> <span class="keyword">&gt;</span>
+&nbsp;
+    <span class="keyword">&lt;</span><span class="leadattribute">TextView</span>
+        <span class="attribute">android:id</span><span class="keyword">="</span><span class="keyword">@+id/textView1"</span>
+        <span class="attribute">android:textSize</span><span class="keyword">="</span><span class="keyword">20dp"</span>
+        <span class="attribute">android:textColor</span><span class="keyword">="</span><span class="keyword">#FF0000"</span>
+        <span class="attribute">android:layout_width</span><span class="keyword">="</span><span class="keyword">wrap_content"</span>
+        <span class="attribute">android:layout_height</span><span class="keyword">="</span><span class="keyword">wrap_content"</span>
+        <span class="attribute">android:layout_alignParentTop</span><span class="keyword">="</span><span class="keyword">true"</span>
+        <span class="attribute">android:layout_centerHorizontal</span><span class="keyword">="</span><span class="keyword">true"</span>
+        <span class="attribute">android:layout_marginTop</span><span class="keyword">="</span><span class="keyword">60dp"</span>
+        <span class="attribute">android:text</span><span class="keyword">="</span><span class="keyword">Dynamic DatePicker"</span> <span class="keyword">/</span><span class="keyword">&gt;</span>
+    
+    <span class="keyword">&lt;</span><span class="leadattribute">Button</span>
+        <span class="attribute">android:id</span><span class="keyword">="</span><span class="keyword">@+id/button1"</span>
+        <span class="attribute">android:layout_width</span><span class="keyword">="</span><span class="keyword">wrap_content"</span>
+        <span class="attribute">android:layout_height</span><span class="keyword">="</span><span class="keyword">wrap_content"</span>
+        <span class="attribute">android:layout_alignParentBottom</span><span class="keyword">="</span><span class="keyword">true"</span>
+        <span class="attribute">android:layout_centerHorizontal</span><span class="keyword">="</span><span class="keyword">true"</span>
+        <span class="attribute">android:layout_marginBottom</span><span class="keyword">="</span><span class="keyword">45dp"</span>
+        <span class="attribute">android:text</span><span class="keyword">="</span><span class="keyword">Pick"</span> <span class="keyword">/</span><span class="keyword">&gt;</span>
+&nbsp;
+<span class="keyword">&lt;</span><span class="keyword">/</span><span class="leadattribute">RelativeLayout</span><span class="keyword">&gt;</span></pre></div>
+
+
+<br>
+<div class="steps"> <span class="stepCount">Step 3 <b>:</b> </span> <span>Open src -&gt; package -&gt; <span class="step_important">MainActivity.java</span> and add following code : </span> </div>
+<br>
+
+
+<div class="text"><pre lang="java"><span class="keyword">package</span> balaji.datepicker_dynamic;
+&nbsp;
+<span class="keyword">import</span> android.os.Bundle;
+<span class="keyword">import</span> android.app.Activity;
+<span class="keyword">import</span> android.view.Menu;
+<span class="keyword">import</span> android.view.View;
+<span class="keyword">import</span> android.widget.Button;
+<span class="keyword">import</span> android.widget.DatePicker;
+<span class="keyword">import</span> android.widget.RelativeLayout;
+<span class="keyword">import</span> android.widget.Toast;
+<span class="keyword">import</span> android.widget.RelativeLayout.LayoutParams;
+&nbsp;
+<span class="keyword">public</span> <span class="keyword">class</span> MainActivity <span class="keyword">extends</span> Activity {
+	
+	RelativeLayout rl;
+	Button pick;
+	DatePicker date;
+&nbsp;
+    @Override
+    <span class="keyword">public</span> <span class="keyword">void</span> onCreate(Bundle savedInstanceState) {
+        <span class="keyword">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        rl = (RelativeLayout) findViewById(R.id.rl);
+        pick = (Button) findViewById(R.id.button1);
+        
+        date = <span class="keyword">new</span> DatePicker (MainActivity.<span class="keyword">this</span>);
+        
+        RelativeLayout.LayoutParams params = <span class="keyword">new</span> RelativeLayout.LayoutParams 
+        		((<span class="keyword">int</span>) LayoutParams.WRAP_CONTENT, (<span class="keyword">int</span>) LayoutParams.WRAP_CONTENT);
+        params.addRule(RelativeLayout.CENTER_IN_PARENT);
+        
+        date.setLayoutParams(params);
+        
+        rl.addView(date);
+        
+        pick.setOnClickListener(<span class="keyword">new</span> View.OnClickListener() {
+			
+		@Override
+		<span class="keyword">public</span> <span class="keyword">void</span> onClick(View v) {
+			<span class="comment">//</span><span class="comment"> TODO Auto-generated method stub
+</span>				
+			Toast.makeText(getBaseContext(), <span class="string">"</span><span class="string">Date is : "</span> +
+				date.getDayOfMonth() + <span class="string">"</span><span class="string">-"</span>+(date.getMonth()+1) + 
+				<span class="string">"</span><span class="string">-"</span>+ date.getYear(), Toast.LENGTH_SHORT).show();
+		}
+	});
+    }
+&nbsp;
+    @Override
+    <span class="keyword">public</span> <span class="keyword">boolean</span> onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.activity_main, menu);
+        <span class="keyword">return</span> true;
+    }
+}</pre></div>
+
+
+<br>
+
+<div class="steps"> <span class="stepCount">Step 4 <b>:</b> </span><span>Open <span class="step_important">AndroidManifest.xml</span> and add following code :</span> </div>
+<br>
+
+
+<div class="text"><pre lang="xml"><span class="keyword">&lt;</span><span class="leadattribute">manifest</span> <span class="attribute">xmlns:android</span><span class="keyword">="</span><span class="keyword">http://schemas.android.com/apk/res/android"</span>
+    <span class="attribute">package</span><span class="keyword">="</span><span class="keyword">balaji.datepicker_dynamic"</span>
+    <span class="attribute">android:versionCode</span><span class="keyword">="</span><span class="keyword">1"</span>
+    <span class="attribute">android:versionName</span><span class="keyword">="</span><span class="keyword">1.0"</span> <span class="keyword">&gt;</span>
+&nbsp;
+    <span class="keyword">&lt;</span><span class="leadattribute">uses-sdk</span>
+        <span class="attribute">android:minSdkVersion</span><span class="keyword">="</span><span class="keyword">3"</span>
+        <span class="attribute">android:targetSdkVersion</span><span class="keyword">="</span><span class="keyword">15"</span> <span class="keyword">/</span><span class="keyword">&gt;</span>
+&nbsp;
+    <span class="keyword">&lt;</span><span class="leadattribute">application</span>
+        <span class="attribute">android:icon</span><span class="keyword">="</span><span class="keyword">@drawable/ic_launcher"</span>
+        <span class="attribute">android:label</span><span class="keyword">="</span><span class="keyword">@string/app_name"</span>
+        <span class="attribute">android:theme</span><span class="keyword">="</span><span class="keyword">@style/AppTheme"</span> <span class="keyword">&gt;</span>
+        <span class="keyword">&lt;</span><span class="leadattribute">activity</span>
+            <span class="attribute">android:name</span><span class="keyword">="</span><span class="keyword">.MainActivity"</span>
+            <span class="attribute">android:label</span><span class="keyword">="</span><span class="keyword">@string/title_activity_main"</span> <span class="keyword">&gt;</span>
+            <span class="keyword">&lt;</span><span class="leadattribute">intent-filter</span><span class="keyword">&gt;</span>
+                <span class="keyword">&lt;</span><span class="leadattribute">action</span> <span class="attribute">android:name</span><span class="keyword">="</span><span class="keyword">android.intent.action.MAIN"</span> <span class="keyword">/</span><span class="keyword">&gt;</span>
+&nbsp;
+                <span class="keyword">&lt;</span><span class="leadattribute">category</span> <span class="attribute">android:name</span><span class="keyword">="</span><span class="keyword">android.intent.category.LAUNCHER"</span> <span class="keyword">/</span><span class="keyword">&gt;</span>
+            <span class="keyword">&lt;</span><span class="keyword">/</span><span class="leadattribute">intent-filter</span><span class="keyword">&gt;</span>
+        <span class="keyword">&lt;</span><span class="keyword">/</span><span class="leadattribute">activity</span><span class="keyword">&gt;</span>
+    <span class="keyword">&lt;</span><span class="keyword">/</span><span class="leadattribute">application</span><span class="keyword">&gt;</span>
+&nbsp;
+<span class="keyword">&lt;</span><span class="keyword">/</span><span class="leadattribute">manifest</span><span class="keyword">&gt;</span></pre></div>
+
+
+<br>
+
+
+
+<div class="steps"> <span class="stepCount">Step 5 <b>:</b> </span><span>Open res -&gt;values -&gt;<span class="step_important">strings.xml</span> and add following code :</span> </div>
+<br>
+
+
+<div class="text"><pre lang="xml"><span class="keyword">&lt;</span><span class="leadattribute">resources</span><span class="keyword">&gt;</span>
+&nbsp;
+    <span class="keyword">&lt;</span><span class="leadattribute">string</span> <span class="attribute">name</span><span class="keyword">="</span><span class="keyword">app_name"</span><span class="keyword">&gt;</span>DatePicker_Dynamic<span class="keyword">&lt;</span><span class="keyword">/</span><span class="leadattribute">string</span><span class="keyword">&gt;</span>
+    <span class="keyword">&lt;</span><span class="leadattribute">string</span> <span class="attribute">name</span><span class="keyword">="</span><span class="keyword">hello_world"</span><span class="keyword">&gt;</span>Hello world!<span class="keyword">&lt;</span><span class="keyword">/</span><span class="leadattribute">string</span><span class="keyword">&gt;</span>
+    <span class="keyword">&lt;</span><span class="leadattribute">string</span> <span class="attribute">name</span><span class="keyword">="</span><span class="keyword">menu_settings"</span><span class="keyword">&gt;</span>Settings<span class="keyword">&lt;</span><span class="keyword">/</span><span class="leadattribute">string</span><span class="keyword">&gt;</span>
+    <span class="keyword">&lt;</span><span class="leadattribute">string</span> <span class="attribute">name</span><span class="keyword">="</span><span class="keyword">title_activity_main"</span><span class="keyword">&gt;</span>MainActivity<span class="keyword">&lt;</span><span class="keyword">/</span><span class="leadattribute">string</span><span class="keyword">&gt;</span>
+&nbsp;
+<span class="keyword">&lt;</span><span class="keyword">/</span><span class="leadattribute">resources</span><span class="keyword">&gt;</span></pre></div>
+
+
+<br>
+
+
+<div class="steps"> <span class="stepCount">Step 6 <b>:</b> </span><span>Our output will be like this : </span> 
+</div>
+<br>
+
+
+<div class="text">
+<pre><br>
+<center><img class="output" src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/Date_Dynamic_1.jpg" alt="Output"></center><br>
+</pre>
+</div>
+
+<div class="text">
+<pre><br>
+<center><img class="output" src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/Date_Dynamic_2.jpg" alt="Output"></center><br>
+</pre>
+</div>
+
+
+<br><br>
+<br><br>
+
+
+
+
+<br><br>
+<br>
+
+</div>
+
+
+</td>
+
+</tr>
+
+</tbody></table>
+
+<table class="prenext">
+			
+		<tbody><tr>
+
+			<td class="width">
+				<a class="previous" href="http://sampleprogramz.com/android/timepicker.php">Previous Chapter</a>
+			</td>
+
+			<td class="width">
+				<a class="next" href="http://sampleprogramz.com/android/calendarview.php"> Next Chapter</a>
+			</td>
+
+		</tr>
+
+		</tbody></table>
+</div>
+
+
+<!-- Android Right Content -->
+
+<div id="AndroidRightContent">
+
+
+<p id="back-top" style="display: none;"><a href="http://sampleprogramz.com/android/datepicker.php#top"><span></span> </a></p>
+
+<br>
+<table>
+
+<tbody><tr>
+<td style="background-color:#F8F8F8;">
+
+<div id="rightshare" style="margin-top:15px;margin-bottom:16px;">
+<center>
+<h6 style="margin-bottom:15px;">SHARE THIS PAGE</h6>
+<div style="margin-top:10px;">
+    <script>
+	<!--
+	txt='<a href="http://www.facebook.com/sharer.php?u=http://www.sampleprogramz.com'+location.pathname+'" target="_blank" title="Facebook">'
+	txt=txt+'<img src="../images/fb.png" width="16px" height="16px" style="margin-right:4px" /></a>';
+
+
+	txt=txt+'<a href="http://twitter.com/home?status=Currently reading http://www.sampleprogramz.com'+location.pathname+'" target="_blank" title="Twitter">';
+	txt=txt+'<img src="../images/twitter.png" width="16px" height="16px" style="margin-right:4px" /></a>';
+
+
+	txt=txt+'<a href="https://plus.google.com/share?url=http://www.sampleprogramz.com'+location.pathname+'" target="_blank" title="Google Plus">';
+	txt=txt+'<img src="../images/gplus.png" width="16px" height="16px" style="margin-right:4px" /></a>';
+
+
+	txt=txt+'<a href="mailto:?&amp;subject='+document.title+'&amp;body=Take%20a%20look%20at%20this%20page%20at%20SampleProgramz.com:%20http://www.sampleprogramz.com'+location.pathname+'" target="_blank" title="E-mail">';
+	txt=txt+'<img src="../images/email.gif" width="16px" height="16px" style="margin-right:4px" /></a>';
+
+	txt=txt+'<a href="http://delicious.com/save?v=5&noui&jump=close&url=http://www.sampleprogramz.com'+location.pathname+'&title='+document.title+'" target="_blank" title="Delicious">';
+	txt=txt+'<img src="../images/delicious.gif" width="16px" height="16px" style="margin-right:4px" /></a>';
+
+
+txt=txt+'<br/><br/>';
+
+
+	txt=txt+'<a href="http://www.reddit.com/submit?url=http://www.sampleprogramz.com'+location.pathname+'" target="_blank" title="Reddit">';
+	txt=txt+'<img src="../images/reddit.gif" width="16px" height="16px" style="margin-right:4px" /></a>';
+
+
+	txt=txt+'<a href="http://digg.com/submit?url=http://www.sampleprogramz.com'+location.pathname+'&amp;title='+document.title+'" target="_blank" title="Digg">';
+	txt=txt+'<img src="../images/digg.gif" width="16px" height="16px" style="margin-right:4px" /></a>';
+
+
+	txt=txt+'<a href="http://www.stumbleupon.com/submit?url=http://www.sampleprogramz.com'+location.pathname+'%26title%3D'+document.title+'" target="_blank" title="Stumbleupon">';
+	txt=txt+'<img src="../images/stumbleupon.gif" width="16px" height="16px" /></a>';
+
+
+	document.write(txt);
+	//--></script><a href="http://www.facebook.com/sharer.php?u=http://www.sampleprogramz.com/android/datepicker.php" target="_blank" title="Facebook"><img src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/fb.png" width="16px" height="16px" style="margin-right:4px"></a><a href="http://twitter.com/home?status=Currently%20reading%20http://www.sampleprogramz.com/android/datepicker.php" target="_blank" title="Twitter"><img src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/twitter.png" width="16px" height="16px" style="margin-right:4px"></a><a href="https://plus.google.com/share?url=http://www.sampleprogramz.com/android/datepicker.php" target="_blank" title="Google Plus"><img src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/gplus.png" width="16px" height="16px" style="margin-right:4px"></a><a href="mailto:?&subject=Sample%20Program%20-%20Android%20DatePicker,%20Static%20DatePicker%20Creation%20in%20Android,%20Dynamic%20DatePicker%20Creation%20in%20Android&body=Take%20a%20look%20at%20this%20page%20at%20SampleProgramz.com:%20http://www.sampleprogramz.com/android/datepicker.php" target="_blank" title="E-mail"><img src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/email.gif" width="16px" height="16px" style="margin-right:4px"></a><a href="http://delicious.com/save?v=5&noui&jump=close&url=http://www.sampleprogramz.com/android/datepicker.php&title=Sample%20Program%20-%20Android%20DatePicker,%20Static%20DatePicker%20Creation%20in%20Android,%20Dynamic%20DatePicker%20Creation%20in%20Android" target="_blank" title="Delicious"><img src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/delicious.gif" width="16px" height="16px" style="margin-right:4px"></a><br><br><a href="http://www.reddit.com/submit?url=http://www.sampleprogramz.com/android/datepicker.php" target="_blank" title="Reddit"><img src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/reddit.gif" width="16px" height="16px" style="margin-right:4px"></a><a href="http://digg.com/submit?url=http://www.sampleprogramz.com/android/datepicker.php&title=Sample%20Program%20-%20Android%20DatePicker,%20Static%20DatePicker%20Creation%20in%20Android,%20Dynamic%20DatePicker%20Creation%20in%20Android" target="_blank" title="Digg"><img src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/digg.gif" width="16px" height="16px" style="margin-right:4px"></a><a href="http://www.stumbleupon.com/submit?url=http://www.sampleprogramz.com/android/datepicker.php%26title%3DSample%20Program%20-%20Android%20DatePicker,%20Static%20DatePicker%20Creation%20in%20Android,%20Dynamic%20DatePicker%20Creation%20in%20Android" target="_blank" title="Stumbleupon"><img src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/stumbleupon.gif" width="16px" height="16px"></a>
+</div>
+
+</center></div>
+<center>
+
+
+</center></td>
+</tr>
+
+
+
+<tr>
+<td>
+<br>
+</td>
+</tr>
+
+
+<tr>
+<td>
+
+<!-- BEGIN STANDARD TAG - 160 x 600 - sampleprogramz.com: Run-of-site - DO NOT MODIFY -->
+<iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="NO" width="160" height="600" src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/saved_resource.html"></iframe>
+<!-- END TAG -->
+
+<br><br>
+</td>
+</tr>
+
+<tr>
+<td>
+
+<a href="http://sampleprogramz.com/android/datepicker.php#"><img src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/right-02.jpg" alt="product 2" has_inimg="true"><div style="height: 72px; float: none;"></div></a>
+
+<br><br>
+</td>
+</tr>
+
+
+<tr>
+<td>
+
+<a href="http://sampleprogramz.com/android/datepicker.php#"><img src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/right-03.jpg" alt="product 3"></a>
+
+<br><br>
+</td>
+</tr>
+
+<tr>
+<td>
+
+<a href="http://sampleprogramz.com/android/datepicker.php#"><img src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/right-04.jpg" alt="product 4"></a>
+
+<br><br>
+</td>
+</tr>
+
+<!--
+<tr>
+<td>
+
+<a href="#"><img src="../images/android/right-05.jpg" alt="product 5" /></a>
+
+<br/><br/>
+</td>
+</tr>
+
+
+<tr>
+<td>
+
+<a href="#"><img src="../images/android/right-06.jpg" alt="product 6" /></a>
+
+<br/><br/>
+</td>
+</tr>
+
+
+<tr>
+<td>
+
+<a href="#"><img src="../images/android/right-07.jpg" alt="product 7" /></a>
+
+<br/><br/>
+</td>
+</tr>
+
+
+<tr>
+<td>
+
+<a href="#"><img src="../images/android/right-08.jpg" alt="product 8" /></a>
+
+<br/><br/>
+</td>
+</tr>
+
+
+<tr>
+<td>
+
+<a href="#"><img src="../images/android/right-09.jpg" alt="product 9" /></a>
+<br/><br/>
+</td>
+</tr>
+
+<tr>
+<td>
+
+<a href="#"><img src="../images/android/right-10.jpg" alt="product 10" /></a>
+
+</td>
+</tr>
+-->
+
+</tbody></table>
+
+
+
+
+
+
+</div>
+
+</div>  </div>  </div>
+
+
+
+<div id="OuterContent">
+	<div id="InnerContent">
+		<div id="main">
+
+
+<span id="italic">Feedbacks : <a class="ListContent" href="mailto:balaji.scz@gmail.com" target="_blank">balaji.scz@gmail.com</a></span>
+
+</div></div></div>
+
+
+<div id="footer_wrapper">
+
+<span class="line">
+<br>
+<br>
+</span>
+
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript" src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/saved_resource"></script><iframe src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/userData.html" style="position: absolute; top: -100px; left: -100px; z-index: -10; border: none; visibility: hidden; width: 1px; height: 1px;"></iframe><iframe src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/register_server_layer.html" style="position: absolute; width: 1px; height: 1px; left: -100px; top: -100px; visibility: hidden;"></iframe><iframe style="position: absolute; width: 1px; height: 1px; top: 0px; left: 0px; visibility: hidden;"></iframe><div id="SF_VISUAL_SEARCH" class="__similarproducts similarproducts_full_ui"><div id="SF_FULL_UI_ARROW"></div><div id="SF_DRAGGABLE_1"></div><a href="javascript:similarproducts.util.bCloseEvent(document.getElementById("infoBtn"), 2);" class="partner_logo_link">safe web</a><div id="infoBtn" hidden="1" onmouseover="similarproducts.util.bCloseEvent(this, 1);" onmouseout="similarproducts.util.bCloseEvent(this, 0);" onclick="similarproducts.util.bCloseEvent(this, 2);"></div><div id="SF_CloseButton" onmouseout="similarproducts.util.bCloseEvent(this,0)" onmouseover="similarproducts.util.bCloseEvent(this,1)"><div class="tooltip">Close</div></div><iframe id="SF_PLUGIN_CONTENT" allowtransparency="true" src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/plugin_w.html" scrolling="yes" frameborder="0" style="width: 540px; height: 446px;"></iframe><div id="SF_INFO_TOOLTIP"></div><div id="SF_INFO_CLOSE" onclick="similarproducts.util.bCloseEvent(this, 2);"></div></div><div id="SF_ScreenLayout" style="z-index: 1989995; width: 100%; height: 100%; left: 0px; top: 0px; position: fixed; display: none; opacity: 0.01; background: white;"></div><sfmsg id="sfMsgId" data="{&quot;imageCount&quot;:0,&quot;ip&quot;:&quot;1.1.1.1&quot;}"></sfmsg><div id="similarproducts_inimg" class="__similarproducts similarproducts_inimg mini generic " style="left:1569.78125px; top:1538.5px;"><div class="container"><div class="explore_button _open_full_ui" style="height:57px; background-image: url(&#39;http://www.superfish.com/ws/images/inimg2/explore_en.png&#39;);" data-report-action="explore click"><div class="label"></div></div><div class="item  _merchant_click" data-merchant-url="http://www.superfish.com/ws/offerURL.action?itemId=-8140067318075017216&amp;userid=1bfc8e56-d063-9232-7d0c-de4f47cc0648-6d4&amp;sessionid=1bfc823122014145640-840-3089&amp;dlsource=rkmgcri&amp;merchantName=sampleprogramz.com&amp;resType=DEALSPRICER&amp;price=&#8377;119.00&amp;identical=0&amp;position=0.1&amp;br=ch&amp;firstCardType=DEALSPRICER&amp;slideUP=2&amp;pageType=SRP&amp;siteType=pip&amp;categoryId=17094&amp;imageURL=http%3A%2F%2Fn1.sdlcdn.com%2Fimgs%2Fa%2Fg%2F8%2FSDL561638654_1391849676_image1-f0392.jpg&amp;language=en-us&amp;CD_CTID=187361&amp;tier1_bucket=StasIdenticalInImg_Holdback&amp;tier1_curr_group=176&amp;tier1_next_group=442&amp;tier1_prev_group=30&amp;tier2_bucket=&amp;tier2_curr_group=15&amp;tier2_next_group=945&amp;tier2_prev_group=5"><div class="thumb_link" style="width:57px; height:57px;"><img src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/SDL561638654_1391849676_image1-f0392.jpg" sfimgevt="-1" sfnoicon="1"></div><div class="thumb_label"></div><div class="thumb_star star_0"></div><div class="price_link">&#8377;119.00</div><div class="item_info" style="left:-54px"><div class="item_info_tip"><div></div></div><div class="item_info_inner"><div class="image"><img src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/SDL561638654_1391849676_image1-f0392.jpg" title="Gift Connect Micro USB Data Cable for Samsung HTC Sony Android" sfimgevt="-1" sfnoicon="1"></div><div class="item_info_label" style=""></div><div class="stars star_0"><div></div></div><div class="itemDetails"><p class="brand">Gift Connect Micro USB Data Cable for Samsung HTC Sony Android</p><div class="merch_data"><span class="price">&#8377;119.00</span> <span class="store" title="SnapDeal">@ SnapDeal</span></div><div class="visitStore" style="width:65px">Visit Store</div></div></div></div></div><div class="item  _merchant_click" data-merchant-url="http://www.superfish.com/ws/offerURL.action?itemId=-3441931190453572608&amp;userid=1bfc8e56-d063-9232-7d0c-de4f47cc0648-6d4&amp;sessionid=1bfc823122014145640-840-3089&amp;dlsource=rkmgcri&amp;merchantName=sampleprogramz.com&amp;resType=DEALSPRICER&amp;price=&#8377;120.00&amp;identical=0&amp;position=0.2&amp;br=ch&amp;firstCardType=DEALSPRICER&amp;slideUP=2&amp;pageType=SRP&amp;siteType=pip&amp;categoryId=17094&amp;imageURL=http%3A%2F%2Fn1.sdlcdn.com%2Fimgs%2Fa%2Fg%2F8%2FSDL561638654_1391849676_image1-f0392.jpg&amp;language=en-us&amp;CD_CTID=187361&amp;tier1_bucket=StasIdenticalInImg_Holdback&amp;tier1_curr_group=176&amp;tier1_next_group=442&amp;tier1_prev_group=30&amp;tier2_bucket=&amp;tier2_curr_group=15&amp;tier2_next_group=945&amp;tier2_prev_group=5"><div class="thumb_link" style="width:57px; height:57px;"><img src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/SDL561638654_1391849676_image1-f0392.jpg" sfimgevt="-1" sfnoicon="1"></div><div class="thumb_label"></div><div class="thumb_star star_0"></div><div class="price_link">&#8377;120.00</div><div class="item_info" style="left:-54px"><div class="item_info_tip"><div></div></div><div class="item_info_inner"><div class="image"><img src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/SDL561638654_1391849676_image1-f0392.jpg" title="Gift Connect Micro USB Data Cable for Samsung HTC Sony Android" sfimgevt="-1" sfnoicon="1"></div><div class="item_info_label" style=""></div><div class="stars star_0"><div></div></div><div class="itemDetails"><p class="brand">Gift Connect Micro USB Data Cable for Samsung HTC Sony Android</p><div class="merch_data"><span class="price">&#8377;120.00</span> <span class="store" title="SnapDeal">@ SnapDeal</span></div><div class="visitStore" style="width:65px">Visit Store</div></div></div></div></div><div class="item  _merchant_click" data-merchant-url="http://www.superfish.com/ws/offerURL.action?itemId=-1041798118558877696&amp;userid=1bfc8e56-d063-9232-7d0c-de4f47cc0648-6d4&amp;sessionid=1bfc823122014145640-840-3089&amp;dlsource=rkmgcri&amp;merchantName=sampleprogramz.com&amp;resType=DEALSPRICER&amp;price=&#8377;125.00&amp;identical=0&amp;position=0.3&amp;br=ch&amp;firstCardType=DEALSPRICER&amp;slideUP=2&amp;pageType=SRP&amp;siteType=pip&amp;categoryId=17094&amp;imageURL=http%3A%2F%2Fn1.sdlcdn.com%2Fimgs%2Fa%2Fg%2F8%2FSDL561638654_1391849676_image1-f0392.jpg&amp;language=en-us&amp;CD_CTID=187361&amp;tier1_bucket=StasIdenticalInImg_Holdback&amp;tier1_curr_group=176&amp;tier1_next_group=442&amp;tier1_prev_group=30&amp;tier2_bucket=&amp;tier2_curr_group=15&amp;tier2_next_group=945&amp;tier2_prev_group=5"><div class="thumb_link" style="width:57px; height:57px;"><img src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/SDL561638654_1391849676_image1-f0392.jpg" sfimgevt="-1" sfnoicon="1"></div><div class="thumb_label"></div><div class="thumb_star star_0"></div><div class="price_link">&#8377;125.00</div><div class="item_info" style="left:-54px"><div class="item_info_tip"><div></div></div><div class="item_info_inner"><div class="image"><img src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/SDL561638654_1391849676_image1-f0392.jpg" title="Gift Connect Micro USB Data Cable for Samsung HTC Sony Android" sfimgevt="-1" sfnoicon="1"></div><div class="item_info_label" style=""></div><div class="stars star_0"><div></div></div><div class="itemDetails"><p class="brand">Gift Connect Micro USB Data Cable for Samsung HTC Sony Android</p><div class="merch_data"><span class="price">&#8377;125.00</span> <span class="store" title="SnapDeal">@ SnapDeal</span></div><div class="visitStore" style="width:65px">Visit Store</div></div></div></div></div><div class="more_button _open_full_ui" style="height:57px" data-report-action="full slideup"><div class="arrow"></div><div class="label">More</div><div class="x _hide_inimg" title="Close"></div><div class="question_mark _show_info" title="Info"></div></div><div class="partner_title _show_info">By safe web</div></div></div><div id="SF_SA_INFO" style="display:none;z-index:1990000;-moz-user-select: none;-khtml-user-select:none;user-select:none;width:324px;height:394px; background: transparent;">    <div class="header" style="width: 324px;background-color: transparent;height: 25px;background: url(http://www.superfish.com/ws/images/bgp.png) -1094px 0 transparent;"><div onmouseout="SF.infoEvent(this, 0);" onmouseover="SF.infoEvent(this, 1);" onclick="SF.infoEvent(this, 2);" id="infoClose"></div><div class="closeButton" style="width:19px;height:19px;background: url(http://www.superfish.com/ws/images/bClose.png) 0 0 no-repeat;position:absolute;top:3px;right:4px;cursor:pointer;"></div></div>   <iframe id="SF_SA_INFO_CONTENT" allowtransparency="true" src="./Sample Program - Android DatePicker, Static DatePicker Creation in Android, Dynamic DatePicker Creation in Android_files/iPage.html" style="z-index:200005;width:323px;height:345px;overflow-x: hidden;overflow-y: hidden;top:25px;left:0;padding:0;position:absolute; background: url(http://www.superfish.com/ws/images/bgp.png) repeat-y scroll -1742px 0 transparent;" scrolling="yes" frameborder="0"></iframe><div class="footer" style="height: 35px;width: 324px;bottom: 0;background-color: transparent;background: url(http://www.superfish.com/ws/images/bgp.png) -1418px 0 transparent;position:absolute; top:350ox;"></div></div><div id="sf_3a350834-7c8a-4e13-bf86-9390faf786c4" style="width:0px; height:0px; position:fixed; bottom:20px; right:20px; display:none; z-index: 2147483600;" class="base_3a350834 ui-draggable"><div class="base_3a350834 quickList_3a350834 shad_3a350834 drag_3a350834" style="opacity: 0; display: block;"><div class="base_3a350834" style="filter:inherit; width:100%; height:16px;color:cornflowerblue;margin-left:17px;">Close</div><div class="quickListBox_3a350834" style="filter:inherit"></div><div class="base_3a350834 btnclose2_3a350834" style="filter:inherit"></div><div id="cbText_3a350834" class="base_3a350834" style="filter:inherit; width:100%; height:16px;color:cornflowerblue;margin-left:17px;">Disable notifications until tomorrow</div><div id="cbUndo_3a350834" class="base_3a350834" style="filter:inherit; width:100%; height:16px;color:cornflowerblue;margin-left:17px;display:none;">Uncheck to cancel notification disabling</div><input type="checkbox" id="cb_3a350834" class="base_3a350834 btnclose3_3a350834" style="filter:inherit"></div><div class="base_3a350834 fullList_3a350834 shad_3a350834"><div class="fullList_3a350834-header drag_3a350834"><div class="fullList_3a350834-title">Safe Web</div><div class="fullList_3a350834-subtitle">found the following:</div></div><div class="fullList_3a350834-body"><div class="fullList_3a350834-entry">No trackers here!</div></div><div class="fullList_3a350834-footer"><div class="fullList_3a350834-cp">©2014</div><div class="fullList_3a350834-history"><a href="http://www.safewebonline.com/app.html" target="_blank">View History</a></div><div class="fullList_3a350834-options"><div class="fullListTog_3a350834"></div><div class="fullListTog_3a350834-label">Show on Websites</div></div></div></div><div class="base_3a350834 main_3a350834"><div class="base_3a350834 subcon_3a350834 shad_3a350834" style="filter:inherit"><div class="btn-drag-drop_3a350834 drag_3a350834"></div><div style="float:left;padding:2px;"></div><div class="btn-pop_3a350834"></div></div><div class="base_3a350834 btnclose_3a350834" style="filter:inherit"></div><div class="base_3a350834 countbox_3a350834" style="filter:inherit">0</div></div></div></body></html>

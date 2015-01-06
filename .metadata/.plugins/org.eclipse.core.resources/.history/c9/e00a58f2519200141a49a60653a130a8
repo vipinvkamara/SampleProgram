@@ -1,0 +1,71 @@
+package com.example.sharedpreferance;
+
+import android.content.Intent;
+import android.content.SharedPreferences.Editor;
+import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.support.v7.app.ActionBarActivity;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class SecondActivity extends ActionBarActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.registration);
+	}
+
+	public  void OnLogin(View v) {
+		String usernsme_reg=((EditText)findViewById(R.id.editText1)).getText().toString();
+		String password_reg=((EditText)findViewById(R.id.editText2)).getText().toString();
+		String email_reg=((EditText)findViewById(R.id.editText3)).getText().toString();
+		String phone_reg=((EditText)findViewById(R.id.editText4)).getText().toString();
+
+		boolean registrationOk=true;
+		if(email_reg.contains("@") && email_reg.contains(".")){
+			if(! email_reg.matches("[A-Z a-z _]+@*.*")){
+				Toast.makeText(getApplicationContext(), "Invalid Email id", Toast.LENGTH_LONG).show();
+				registrationOk = false;
+			}
+		}else{
+			Toast.makeText(getApplicationContext(), "No proper Email id", Toast.LENGTH_LONG).show();
+			registrationOk = false;
+		}
+
+
+		if(usernsme_reg.equals("")){
+			Toast.makeText(getApplicationContext(), "Enter username", Toast.LENGTH_LONG).show();
+			registrationOk = false;
+		}
+		if(password_reg.equals("")){
+			Toast.makeText(getApplicationContext(), "Enter password", Toast.LENGTH_LONG).show();
+			registrationOk = false;
+		}
+		if(email_reg.equals("")){
+			Toast.makeText(getApplicationContext(), "Enter the Name", Toast.LENGTH_LONG).show();
+			registrationOk = false;
+		}
+
+		int len=phone_reg.length(); 
+		if(phone_reg.equals("")||len<10||len>=11) 
+		{
+			Toast.makeText(getApplicationContext(), "Enter the correct Phone number", Toast.LENGTH_LONG).show();
+			registrationOk = false;
+		}
+		if(registrationOk){
+			Editor e=PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit();
+			e.putString("username", usernsme_reg);
+			e.putString("password", password_reg);
+			e.putString("email", email_reg);
+			e.putLong("phone", Long.parseLong(phone_reg));
+			e.putBoolean("login Status", false);
+			e.commit();
+			Toast.makeText(this, "login suceesfully", Toast.LENGTH_LONG).show();
+			startActivity(new Intent(this,MainActivity.class));
+		}
+
+	}
+}
+

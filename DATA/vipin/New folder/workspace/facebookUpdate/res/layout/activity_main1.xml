@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.example.facebookupdate.MainActivity1" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#4C92D2"
+        android:text="Welcome to eBay"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#DEDEDE"
+        android:weightSum="3.0" >
+
+        <LinearLayout
+            android:layout_width="236dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="#CCCCCC" >
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:background="#F3F3F3"
+                android:ems="10"
+                android:text="Search eBay" >
+
+                <requestFocus />
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#F3F3F3"
+                android:src="@drawable/lens" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2.0"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:background="#B9B9B9"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_weight="0.5"
+                android:layout_width="27dp"
+                android:paddingLeft="5dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/barcode" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="Scan"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#CBE5FF"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="91dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ebay" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in" />
+
+    </LinearLayout>
+
+</LinearLayout>

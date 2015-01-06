@@ -1,0 +1,23 @@
+package com.example.cameraview;
+
+import android.app.Activity;
+import android.graphics.Camera;
+import android.os.Bundle;
+import android.widget.ImageButton;
+
+public class CameraActivity extends Activity {
+	private  static byte[] scaleData;
+	private static Camera camera;
+
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		setContentView(R.layout.activity_main);
+		if(Camera.getNumberOfCamera()<=1){
+			((ImageButton)findViewById(R.layout.cameraChange))
+			
+		}
+	}
+
+
+}

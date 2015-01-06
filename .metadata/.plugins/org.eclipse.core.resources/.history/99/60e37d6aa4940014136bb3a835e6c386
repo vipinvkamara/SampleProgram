@@ -1,0 +1,41 @@
+package com.example.cameraview;
+
+import android.app.Activity;
+import android.hardware.Camera;;
+import android.os.Bundle;
+import android.widget.ImageButton;
+import android.widget.Toast;
+
+public class CameraActivity extends Activity {
+	private  static byte[] scaleData;
+	private static Camera camera;
+
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		setContentView(R.layout.activity_main);
+		if(Camera.getNumberOfCameras()<=1){
+			((Button)findViewById(R.layout.ca)).setEnabled(false);
+			if(camera ==null){
+
+
+				try {
+					camera=camera.open();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+					Toast.makeText(CameraActivity.this, Toast.LENGTH_LONG).show();
+
+				}
+
+
+			}
+			else{
+
+			}
+
+		}
+	}
+
+
+}
